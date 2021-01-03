@@ -16,7 +16,7 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
-        preg = int(request.form['Pregnancies'])
+        preg = int(request.form['pregnancies'])
         glucose = int(request.form['glucose'])
         bp = int(request.form['bloodpressure'])
         st = int(request.form['skinthickness'])
